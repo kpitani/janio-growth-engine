@@ -79,7 +79,7 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-secondary': 'var(--gradient-secondary)',
-				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-hero': 'hsl(var(--background))', /* White background */
 				'gradient-subtle': 'var(--gradient-subtle)',
 			},
 			boxShadow: {

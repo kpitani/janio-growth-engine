@@ -47,7 +47,7 @@ All colors MUST be HSL.
     /* Professional Gradients - Pure Grayscale */
     --gradient-primary: linear-gradient(135deg, hsl(0 0% 9%), hsl(0 0% 15%));
     --gradient-secondary: linear-gradient(135deg, hsl(0 0% 30%), hsl(0 0% 20%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 9%) 0%, hsl(0 0% 30%) 100%);
+    --gradient-hero: hsl(0 0% 100%); /* Changed to white background */
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 96%));
 
     /* Professional Shadows */
@@ -126,7 +126,6 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: hsl(var(--foreground));
     letter-spacing: -0.025em;
   }
 
