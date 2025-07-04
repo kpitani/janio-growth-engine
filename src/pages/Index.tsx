@@ -123,9 +123,9 @@ const Index = () => {
             <div className="text-white space-y-8 animate-fade-in">
               <h1 className="text-5xl lg:text-7xl font-display leading-tight tracking-tight">
                 Scale your e-commerce{' '}
-                <span className="text-white/90 font-light">without logistics complexity</span>
+                <span className="text-white font-light">without logistics complexity</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-white/95 leading-relaxed max-w-2xl font-medium">
+              <p className="text-xl lg:text-2xl text-white leading-relaxed max-w-2xl font-medium">
                 Expert-managed Land, Air, Ocean & Warehousing that grows with your business
               </p>
               <div className="flex flex-col sm:flex-row gap-6 pt-4">
@@ -147,19 +147,19 @@ const Index = () => {
                 <div className="absolute -inset-4 bg-white/10 rounded-2xl blur-xl" />
                 <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-professional">
                   <div className="space-y-6">
-                    <div className="text-white/90 text-sm font-medium uppercase tracking-wider">Real-time Analytics</div>
+                    <div className="text-white text-sm font-medium uppercase tracking-wider">Real-time Analytics</div>
                     <div className="grid grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <div className="text-3xl font-bold text-white">15%</div>
-                        <div className="text-white/70 text-sm">Cost Reduction</div>
+                        <div className="text-white text-sm">Cost Reduction</div>
                       </div>
                       <div className="space-y-2">
                         <div className="text-3xl font-bold text-white">99.5%</div>
-                        <div className="text-white/70 text-sm">On-time Delivery</div>
+                        <div className="text-white text-sm">On-time Delivery</div>
                       </div>
                     </div>
                     <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                      <div className="h-full bg-white/70 rounded-full w-4/5" />
+                      <div className="h-full bg-white rounded-full w-4/5" />
                     </div>
                   </div>
                 </div>
