@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Resources from "./pages/Resources";
 import OperationsTeams from "./pages/solutions/OperationsTeams";
 import ProcurementTeams from "./pages/solutions/ProcurementTeams";
 import SupplyChainLeaders from "./pages/solutions/SupplyChainLeaders";
@@ -14,6 +15,7 @@ import LogisticsAsAService from "./pages/services/LogisticsAsAService";
 import TransportationProcurement from "./pages/services/TransportationProcurement";
 import ControlTower from "./pages/services/ControlTower";
 import InvoiceAudit from "./pages/services/InvoiceAudit";
+import EcommerceScaling from "./pages/use-cases/EcommerceScaling";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/resources" element={<Resources />} />
           
           {/* Solutions Routes */}
           <Route path="/solutions/operations-teams" element={<OperationsTeams />} />
@@ -40,6 +43,9 @@ const App = () => (
           <Route path="/services/transportation-procurement" element={<TransportationProcurement />} />
           <Route path="/services/control-tower" element={<ControlTower />} />
           <Route path="/services/invoice-audit" element={<InvoiceAudit />} />
+          
+          {/* Use Cases Routes */}
+          <Route path="/use-cases/ecommerce-scaling" element={<EcommerceScaling />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
