@@ -9,18 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary-hover shadow-soft hover:shadow-medium",
+        default: "bg-primary text-primary-foreground hover:bg-primary-hover shadow-soft hover:shadow-medium transition-all duration-300",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 transition-all duration-300",
         outline:
-          "border border-border bg-background hover:bg-muted hover:text-foreground shadow-soft",
+          "border border-border bg-background text-foreground hover:bg-muted shadow-soft hover:shadow-medium transition-all duration-300",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary-hover shadow-soft hover:shadow-medium",
-        ghost: "hover:bg-muted hover:text-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-white text-primary hover:bg-white/95 hover:shadow-professional transform hover:scale-105 transition-all duration-300 font-semibold tracking-wide",
-        hero: "bg-white/10 text-white hover:bg-white/20 hover:shadow-elegant transform hover:scale-105 transition-all duration-300 font-semibold border border-white/30 backdrop-blur-sm",
-        accent: "bg-accent text-accent-foreground hover:bg-accent-hover shadow-soft hover:shadow-medium",
+          "bg-secondary text-secondary-foreground hover:bg-secondary-hover shadow-soft hover:shadow-medium transition-all duration-300",
+        ghost: "hover:bg-muted hover:text-foreground transition-all duration-300",
+        link: "text-primary underline-offset-4 hover:underline transition-all duration-300",
+        cta: "bg-primary text-primary-foreground hover:bg-primary-hover shadow-medium hover:shadow-strong transform hover:scale-[1.02] transition-all duration-300 font-semibold tracking-wide",
+        hero: "bg-background/10 text-primary-foreground border border-background/30 hover:bg-background/20 shadow-elegant hover:shadow-medium transform hover:scale-[1.02] transition-all duration-300 font-semibold backdrop-blur-sm",
+        accent: "bg-accent text-accent-foreground hover:bg-accent-hover shadow-soft hover:shadow-medium transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
