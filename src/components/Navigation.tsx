@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
+import janioLogo from "@/assets/janio-logo.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -119,9 +120,11 @@ const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold font-display text-primary">
-              Janio
-            </div>
+            <img 
+              src={janioLogo} 
+              alt="Janio" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

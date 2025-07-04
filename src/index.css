@@ -3,51 +3,51 @@
 @tailwind utilities;
 
 /* Janio 4PL Logistics Design System
-Professional, enterprise-grade aesthetic with data-driven elements
+Professional, enterprise-grade aesthetic with clean monochromatic palette
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 210 17% 98%;
-    --foreground: 210 11% 15%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 11% 15%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 11% 15%;
+    --popover-foreground: 0 0% 9%;
 
-    /* Janio Brand Colors */
-    --primary: 210 56% 22%; /* Deep navy blue #1B365C */
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 210 56% 18%;
+    /* Janio Brand Colors - Monochromatic */
+    --primary: 0 0% 9%; /* Deep black #171717 */
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 0 0% 15%;
 
-    --secondary: 18 100% 60%; /* Bright orange #FF6B35 */
-    --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 18 100% 55%;
+    --secondary: 0 0% 35%; /* Medium gray #595959 */
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 0 0% 25%;
 
-    --accent: 203 45% 50%; /* Light blue #4A90B8 */
-    --accent-foreground: 0 0% 100%;
-    --accent-hover: 203 45% 45%;
+    --accent: 0 0% 55%; /* Light gray #8C8C8C */
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 0 0% 45%;
 
     /* Neutral Colors */
-    --muted: 210 17% 96%; /* Light gray #F5F7FA */
-    --muted-foreground: 210 6% 46%;
+    --muted: 0 0% 96%; /* Very light gray #F5F5F5 */
+    --muted-foreground: 0 0% 45%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 210 12% 88%;
-    --input: 210 12% 88%;
-    --ring: 210 56% 22%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 9%;
 
     --radius: 0.75rem;
 
-    /* Janio Gradients */
+    /* Janio Gradients - Monochromatic */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
     --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-hover)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
 
     /* Shadows */
