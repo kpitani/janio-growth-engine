@@ -131,7 +131,7 @@ const Navigation = () => {
                 if (nextSibling) nextSibling.style.display = 'block';
               }}
             />
-            <span className="hidden text-xl font-bold text-primary tracking-tight">JANIO</span>
+            <span className="text-xl font-bold text-primary tracking-tight">JANIO</span>
           </Link>
 
           {/* Desktop Navigation */}

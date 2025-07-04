@@ -33,7 +33,7 @@ All colors MUST be HSL.
 
     /* Neutral Colors */
     --muted: 0 0% 96%; /* Very light gray #F5F5F5 */
-    --muted-foreground: 0 0% 40%;
+    --muted-foreground: 0 0% 25%; /* Improved contrast for readability */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -88,7 +88,7 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 95%;
 
     --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted-foreground: 0 0% 75%; /* Better contrast on dark backgrounds */
 
     --accent: 0 0% 25%;
     --accent-foreground: 0 0% 95%;
