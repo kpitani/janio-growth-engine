@@ -85,7 +85,7 @@ const ControlTower = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Exception Response Time</span>
-                    <span className="font-semibold text-primary">< 2 hours</span>
+                    <span className="font-semibold text-primary">&lt; 2 hours</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">On-Time Performance</span>
