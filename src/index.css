@@ -9,106 +9,106 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 39 36% 98%; /* #fbfaf6 - Lightest warm neutral */
-    --foreground: 241 95% 30%; /* #050593 - Deep blue */
+    --background: 0 0% 100%; /* #ffffff - Pure white */
+    --foreground: 248 92% 22%; /* #0c056d - Deep navy */
 
-    --card: 39 36% 98%; /* #fbfaf6 - Lightest warm neutral */
-    --card-foreground: 241 95% 30%; /* #050593 - Deep blue */
+    --card: 0 0% 100%; /* #ffffff - Pure white */
+    --card-foreground: 248 92% 22%; /* #0c056d - Deep navy */
 
-    --popover: 39 36% 98%; /* #fbfaf6 - Lightest warm neutral */
-    --popover-foreground: 241 95% 30%; /* #050593 - Deep blue */
+    --popover: 0 0% 100%; /* #ffffff - Pure white */
+    --popover-foreground: 248 92% 22%; /* #0c056d - Deep navy */
 
-    /* Janio Brand Colors - Blue/Teal Primary */
-    --primary: 241 95% 30%; /* #050593 - Deep blue */
-    --primary-foreground: 39 36% 98%; /* #fbfaf6 - Light neutral */
-    --primary-hover: 240 67% 37%; /* #1e1e9e - Darker blue */
+    /* Navy Blue Primary System */
+    --primary: 248 92% 22%; /* #0c056d - Deep navy */
+    --primary-foreground: 0 0% 100%; /* #ffffff - Pure white */
+    --primary-hover: 253 92% 13%; /* #07033c - Very dark navy */
 
-    --secondary: 179 84% 46%; /* #1FCECA - Bright teal */
-    --secondary-foreground: 241 95% 30%; /* #050593 - Deep blue */
-    --secondary-hover: 178 62% 52%; /* #35d3cf - Darker teal */
+    --secondary: 246 90% 32%; /* #11079e - Medium blue */
+    --secondary-foreground: 0 0% 100%; /* #ffffff - Pure white */
+    --secondary-hover: 248 92% 22%; /* #0c056d - Deep navy */
 
-    --accent: 261 51% 44%; /* #5C36AC - Purple */
-    --accent-foreground: 39 36% 98%; /* #fbfaf6 - Light neutral */
-    --accent-hover: 261 48% 50%; /* #6c4ab4 - Lighter purple */
+    --accent: 246 90% 32%; /* #11079e - Medium blue */
+    --accent-foreground: 0 0% 100%; /* #ffffff - Pure white */
+    --accent-hover: 248 92% 22%; /* #0c056d - Deep navy */
 
-    /* Neutral Colors - Warm Beiges */
-    --muted: 39 36% 94%; /* #f7f4ee - Very light warm neutral */
-    --muted-foreground: 230 48% 31%; /* #273272 - Navy blue */
+    /* Gray Neutral System */
+    --muted: 0 0% 90%; /* #e6e6e6 - Light gray */
+    --muted-foreground: 248 92% 22%; /* #0c056d - Deep navy */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 39 36% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 39 35% 78%; /* #ddceb1 - Light warm neutral */
-    --input: 39 35% 78%; /* #ddceb1 - Light warm neutral */
-    --ring: 241 95% 30%; /* #050593 - Deep blue */
+    --border: 0 0% 80%; /* #cccccc - Medium gray */
+    --input: 0 0% 80%; /* #cccccc - Medium gray */
+    --ring: 248 92% 22%; /* #0c056d - Deep navy */
 
     --radius: 0.75rem;
 
-    /* Professional Gradients - Blue/Teal Themed */
-    --gradient-primary: linear-gradient(135deg, hsl(241 95% 30%), hsl(179 84% 46%));
-    --gradient-secondary: linear-gradient(135deg, hsl(179 84% 46%), hsl(178 62% 52%));
-    --gradient-hero: linear-gradient(135deg, hsl(241 95% 30%) 0%, hsl(179 84% 46%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(39 36% 98%), hsl(39 36% 94%));
+    /* Navy Blue Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(248 92% 22%), hsl(246 90% 32%));
+    --gradient-secondary: linear-gradient(135deg, hsl(246 90% 32%), hsl(248 92% 22%));
+    --gradient-hero: linear-gradient(135deg, hsl(248 92% 22%) 0%, hsl(246 90% 32%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%));
 
-    /* Professional Shadows - Blue Tinted */
-    --shadow-soft: 0 2px 8px hsl(241 95% 30% / 0.08);
-    --shadow-medium: 0 4px 16px hsl(241 95% 30% / 0.12);
-    --shadow-strong: 0 8px 24px hsl(241 95% 30% / 0.16);
-    --shadow-elegant: 0 4px 20px hsl(179 84% 46% / 0.1);
+    /* Navy Blue Shadows */
+    --shadow-soft: 0 2px 8px hsl(248 92% 22% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(248 92% 22% / 0.12);
+    --shadow-strong: 0 8px 24px hsl(248 92% 22% / 0.16);
+    --shadow-elegant: 0 4px 20px hsl(248 92% 22% / 0.1);
 
     /* Professional Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    /* Sidebar - Blue/Teal Themed */
-    --sidebar-background: 39 36% 96%; /* #f7f4ee - Light warm neutral */
-    --sidebar-foreground: 230 48% 31%; /* #273272 - Navy blue */
-    --sidebar-primary: 241 95% 30%; /* #050593 - Deep blue */
-    --sidebar-primary-foreground: 39 36% 98%; /* #fbfaf6 - Light neutral */
-    --sidebar-accent: 39 36% 91%; /* #f0e9dc - Medium warm neutral */
-    --sidebar-accent-foreground: 241 95% 30%; /* #050593 - Deep blue */
-    --sidebar-border: 39 35% 78%; /* #ddceb1 - Light warm neutral */
-    --sidebar-ring: 241 95% 30%; /* #050593 - Deep blue */
+    /* Sidebar - Navy Theme */
+    --sidebar-background: 0 0% 95%; /* Light gray background */
+    --sidebar-foreground: 248 92% 22%; /* #0c056d - Deep navy */
+    --sidebar-primary: 248 92% 22%; /* #0c056d - Deep navy */
+    --sidebar-primary-foreground: 0 0% 100%; /* #ffffff - Pure white */
+    --sidebar-accent: 0 0% 90%; /* #e6e6e6 - Light gray */
+    --sidebar-accent-foreground: 248 92% 22%; /* #0c056d - Deep navy */
+    --sidebar-border: 0 0% 80%; /* #cccccc - Medium gray */
+    --sidebar-ring: 248 92% 22%; /* #0c056d - Deep navy */
   }
 
   .dark {
-    --background: 230 48% 8%; /* Dark navy */
-    --foreground: 178 65% 85%; /* Light teal */
+    --background: 253 92% 13%; /* #07033c - Very dark navy */
+    --foreground: 0 0% 90%; /* #e6e6e6 - Light gray */
 
-    --card: 230 48% 8%; /* Dark navy */
-    --card-foreground: 178 65% 85%; /* Light teal */
+    --card: 253 92% 13%; /* #07033c - Very dark navy */
+    --card-foreground: 0 0% 90%; /* #e6e6e6 - Light gray */
 
-    --popover: 230 48% 8%; /* Dark navy */
-    --popover-foreground: 178 65% 85%; /* Light teal */
+    --popover: 253 92% 13%; /* #07033c - Very dark navy */
+    --popover-foreground: 0 0% 90%; /* #e6e6e6 - Light gray */
 
-    --primary: 178 65% 73%; /* Light teal */
-    --primary-foreground: 230 48% 8%; /* Dark navy */
+    --primary: 246 90% 32%; /* #11079e - Medium blue */
+    --primary-foreground: 0 0% 100%; /* #ffffff - Pure white */
 
-    --secondary: 241 95% 20%; /* Dark blue */
-    --secondary-foreground: 178 65% 85%; /* Light teal */
+    --secondary: 248 92% 22%; /* #0c056d - Deep navy */
+    --secondary-foreground: 0 0% 90%; /* #e6e6e6 - Light gray */
 
-    --muted: 230 48% 15%; /* Very dark navy */
-    --muted-foreground: 240 47% 75%; /* Light blue-gray */
+    --muted: 248 92% 18%; /* Darker navy for muted */
+    --muted-foreground: 0 0% 80%; /* #cccccc - Medium gray */
 
-    --accent: 261 51% 35%; /* Dark purple */
-    --accent-foreground: 178 65% 85%; /* Light teal */
+    --accent: 246 90% 32%; /* #11079e - Medium blue */
+    --accent-foreground: 0 0% 100%; /* #ffffff - Pure white */
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 178 65% 85%;
+    --destructive-foreground: 0 0% 90%;
 
-    --border: 230 48% 20%; /* Dark navy border */
-    --input: 230 48% 20%; /* Dark navy input */
-    --ring: 178 65% 73%; /* Light teal ring */
+    --border: 248 92% 18%; /* Darker navy border */
+    --input: 248 92% 18%; /* Darker navy input */
+    --ring: 246 90% 32%; /* #11079e - Medium blue ring */
     
     /* Dark Sidebar */
-    --sidebar-background: 230 48% 8%; /* Dark navy */
-    --sidebar-foreground: 178 65% 85%; /* Light teal */
-    --sidebar-primary: 178 65% 73%; /* Light teal */
-    --sidebar-primary-foreground: 230 48% 8%; /* Dark navy */
-    --sidebar-accent: 230 48% 15%; /* Very dark navy */
-    --sidebar-accent-foreground: 178 65% 85%; /* Light teal */
-    --sidebar-border: 230 48% 20%; /* Dark navy border */
-    --sidebar-ring: 178 65% 73%; /* Light teal ring */
+    --sidebar-background: 253 92% 13%; /* #07033c - Very dark navy */
+    --sidebar-foreground: 0 0% 90%; /* #e6e6e6 - Light gray */
+    --sidebar-primary: 246 90% 32%; /* #11079e - Medium blue */
+    --sidebar-primary-foreground: 0 0% 100%; /* #ffffff - Pure white */
+    --sidebar-accent: 248 92% 18%; /* Darker navy */
+    --sidebar-accent-foreground: 0 0% 90%; /* #e6e6e6 - Light gray */
+    --sidebar-border: 248 92% 18%; /* Darker navy border */
+    --sidebar-ring: 246 90% 32%; /* #11079e - Medium blue ring */
   }
 }
 
