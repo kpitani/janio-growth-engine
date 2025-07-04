@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from '@/components/Navigation';
 import PersonaCard from '@/components/PersonaCard';
 import HowItWorksStep from '@/components/HowItWorksStep';
-import heroImage from '@/assets/hero-dashboard.jpg';
+import heroImage from '@/assets/hero-professional.jpg';
 import { 
   Settings, 
   DollarSign, 
@@ -109,38 +109,61 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-hero">
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="relative container mx-auto px-4 py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={heroImage} 
+            alt="Professional business workspace with modern technology"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 hero-overlay" />
+        </div>
+        <div className="relative container mx-auto px-4 py-24 lg:py-40">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="text-white space-y-8 animate-fade-in">
-              <h1 className="text-4xl lg:text-6xl font-bold font-display leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-display leading-tight tracking-tight">
                 Scale your e-commerce{' '}
-                <span className="text-secondary">without logistics complexity</span>
+                <span className="text-white/90 font-light">without logistics complexity</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-white/90 leading-relaxed">
+              <p className="text-xl lg:text-2xl text-white/95 leading-relaxed max-w-2xl font-medium">
                 Expert-managed Land, Air, Ocean & Warehousing that grows with your business
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="cta" size="xl" asChild>
+              <div className="flex flex-col sm:flex-row gap-6 pt-4">
+                <Button variant="cta" size="xl" asChild className="shadow-professional">
                   <Link to="/assessment">
                     Get Your Logistics Assessment
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
-                <Button variant="hero" size="xl" asChild>
+                <Button variant="hero" size="xl" asChild className="shadow-elegant">
                   <Link to="/how-it-works">
                     See How It Works
                   </Link>
                 </Button>
               </div>
             </div>
-            <div className="animate-slide-up">
-              <img 
-                src={heroImage} 
-                alt="Modern logistics dashboard showing real-time analytics"
-                className="rounded-lg shadow-strong"
-              />
+            <div className="animate-slide-up lg:justify-self-end">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-white/10 rounded-2xl blur-xl" />
+                <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-professional">
+                  <div className="space-y-6">
+                    <div className="text-white/90 text-sm font-medium uppercase tracking-wider">Real-time Analytics</div>
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <div className="text-3xl font-bold text-white">15%</div>
+                        <div className="text-white/70 text-sm">Cost Reduction</div>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="text-3xl font-bold text-white">99.5%</div>
+                        <div className="text-white/70 text-sm">On-time Delivery</div>
+                      </div>
+                    </div>
+                    <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div className="h-full bg-white/70 rounded-full w-4/5" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
