@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from '@/components/Navigation';
 import PersonaCard from '@/components/PersonaCard';
 import HowItWorksStep from '@/components/HowItWorksStep';
-import heroImage from '@/assets/hero-professional.jpg';
+import heroImage from '@/assets/hero-blue-professional.jpg';
 import { 
   Settings, 
   DollarSign, 

@@ -3,112 +3,112 @@
 @tailwind utilities;
 
 /* Janio 4PL Logistics Design System
-Professional, enterprise-grade aesthetic with clean monochromatic palette
+Professional, modern aesthetic with blue/teal/purple palette
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 9%;
+    --background: 39 36% 98%; /* #fbfaf6 - Lightest warm neutral */
+    --foreground: 241 95% 30%; /* #050593 - Deep blue */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 9%;
+    --card: 39 36% 98%; /* #fbfaf6 - Lightest warm neutral */
+    --card-foreground: 241 95% 30%; /* #050593 - Deep blue */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 9%;
+    --popover: 39 36% 98%; /* #fbfaf6 - Lightest warm neutral */
+    --popover-foreground: 241 95% 30%; /* #050593 - Deep blue */
 
-    /* Janio Brand Colors - Pure Monochromatic */
-    --primary: 0 0% 9%; /* Deep black #171717 */
-    --primary-foreground: 0 0% 98%;
-    --primary-hover: 0 0% 15%;
+    /* Janio Brand Colors - Blue/Teal Primary */
+    --primary: 241 95% 30%; /* #050593 - Deep blue */
+    --primary-foreground: 39 36% 98%; /* #fbfaf6 - Light neutral */
+    --primary-hover: 240 67% 37%; /* #1e1e9e - Darker blue */
 
-    --secondary: 0 0% 30%; /* Professional gray #4D4D4D */
-    --secondary-foreground: 0 0% 98%;
-    --secondary-hover: 0 0% 20%;
+    --secondary: 179 84% 46%; /* #1FCECA - Bright teal */
+    --secondary-foreground: 241 95% 30%; /* #050593 - Deep blue */
+    --secondary-hover: 178 62% 52%; /* #35d3cf - Darker teal */
 
-    --accent: 0 0% 50%; /* Medium gray #808080 */
-    --accent-foreground: 0 0% 98%;
-    --accent-hover: 0 0% 40%;
+    --accent: 261 51% 44%; /* #5C36AC - Purple */
+    --accent-foreground: 39 36% 98%; /* #fbfaf6 - Light neutral */
+    --accent-hover: 261 48% 50%; /* #6c4ab4 - Lighter purple */
 
-    /* Neutral Colors */
-    --muted: 0 0% 96%; /* Very light gray #F5F5F5 */
-    --muted-foreground: 0 0% 25%; /* Improved contrast for readability */
+    /* Neutral Colors - Warm Beiges */
+    --muted: 39 36% 94%; /* #f7f4ee - Very light warm neutral */
+    --muted-foreground: 230 48% 31%; /* #273272 - Navy blue */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 39 36% 98%;
 
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 0 0% 9%;
+    --border: 39 35% 78%; /* #ddceb1 - Light warm neutral */
+    --input: 39 35% 78%; /* #ddceb1 - Light warm neutral */
+    --ring: 241 95% 30%; /* #050593 - Deep blue */
 
     --radius: 0.75rem;
 
-    /* Professional Gradients - Pure Grayscale */
-    --gradient-primary: linear-gradient(135deg, hsl(0 0% 9%), hsl(0 0% 15%));
-    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 30%), hsl(0 0% 20%));
-    --gradient-hero: hsl(0 0% 100%); /* Changed to white background */
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 96%));
+    /* Professional Gradients - Blue/Teal Themed */
+    --gradient-primary: linear-gradient(135deg, hsl(241 95% 30%), hsl(179 84% 46%));
+    --gradient-secondary: linear-gradient(135deg, hsl(179 84% 46%), hsl(178 62% 52%));
+    --gradient-hero: linear-gradient(135deg, hsl(241 95% 30%) 0%, hsl(179 84% 46%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(39 36% 98%), hsl(39 36% 94%));
 
-    /* Professional Shadows */
-    --shadow-soft: 0 2px 8px hsl(0 0% 9% / 0.08);
-    --shadow-medium: 0 4px 16px hsl(0 0% 9% / 0.12);
-    --shadow-strong: 0 8px 24px hsl(0 0% 9% / 0.16);
-    --shadow-elegant: 0 4px 20px hsl(0 0% 9% / 0.1);
+    /* Professional Shadows - Blue Tinted */
+    --shadow-soft: 0 2px 8px hsl(241 95% 30% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(241 95% 30% / 0.12);
+    --shadow-strong: 0 8px 24px hsl(241 95% 30% / 0.16);
+    --shadow-elegant: 0 4px 20px hsl(179 84% 46% / 0.1);
 
     /* Professional Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    /* Sidebar - Pure Grayscale */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 30%;
-    --sidebar-primary: 0 0% 9%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 94%;
-    --sidebar-accent-foreground: 0 0% 9%;
-    --sidebar-border: 0 0% 88%;
-    --sidebar-ring: 0 0% 9%;
+    /* Sidebar - Blue/Teal Themed */
+    --sidebar-background: 39 36% 96%; /* #f7f4ee - Light warm neutral */
+    --sidebar-foreground: 230 48% 31%; /* #273272 - Navy blue */
+    --sidebar-primary: 241 95% 30%; /* #050593 - Deep blue */
+    --sidebar-primary-foreground: 39 36% 98%; /* #fbfaf6 - Light neutral */
+    --sidebar-accent: 39 36% 91%; /* #f0e9dc - Medium warm neutral */
+    --sidebar-accent-foreground: 241 95% 30%; /* #050593 - Deep blue */
+    --sidebar-border: 39 35% 78%; /* #ddceb1 - Light warm neutral */
+    --sidebar-ring: 241 95% 30%; /* #050593 - Deep blue */
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
+    --background: 230 48% 8%; /* Dark navy */
+    --foreground: 178 65% 85%; /* Light teal */
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 230 48% 8%; /* Dark navy */
+    --card-foreground: 178 65% 85%; /* Light teal */
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 230 48% 8%; /* Dark navy */
+    --popover-foreground: 178 65% 85%; /* Light teal */
 
-    --primary: 0 0% 95%;
-    --primary-foreground: 0 0% 8%;
+    --primary: 178 65% 73%; /* Light teal */
+    --primary-foreground: 230 48% 8%; /* Dark navy */
 
-    --secondary: 0 0% 20%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 241 95% 20%; /* Dark blue */
+    --secondary-foreground: 178 65% 85%; /* Light teal */
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 75%; /* Better contrast on dark backgrounds */
+    --muted: 230 48% 15%; /* Very dark navy */
+    --muted-foreground: 240 47% 75%; /* Light blue-gray */
 
-    --accent: 0 0% 25%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 261 51% 35%; /* Dark purple */
+    --accent-foreground: 178 65% 85%; /* Light teal */
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 95%;
+    --destructive-foreground: 178 65% 85%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 0 0% 85%;
+    --border: 230 48% 20%; /* Dark navy border */
+    --input: 230 48% 20%; /* Dark navy input */
+    --ring: 178 65% 73%; /* Light teal ring */
     
     /* Dark Sidebar */
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 0 0% 85%;
-    --sidebar-primary: 0 0% 95%;
-    --sidebar-primary-foreground: 0 0% 8%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: 0 0% 85%;
-    --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 0 0% 85%;
+    --sidebar-background: 230 48% 8%; /* Dark navy */
+    --sidebar-foreground: 178 65% 85%; /* Light teal */
+    --sidebar-primary: 178 65% 73%; /* Light teal */
+    --sidebar-primary-foreground: 230 48% 8%; /* Dark navy */
+    --sidebar-accent: 230 48% 15%; /* Very dark navy */
+    --sidebar-accent-foreground: 178 65% 85%; /* Light teal */
+    --sidebar-border: 230 48% 20%; /* Dark navy border */
+    --sidebar-ring: 178 65% 73%; /* Light teal ring */
   }
 }
 
