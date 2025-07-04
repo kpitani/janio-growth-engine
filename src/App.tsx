@@ -16,6 +16,14 @@ import TransportationProcurement from "./pages/services/TransportationProcuremen
 import ControlTower from "./pages/services/ControlTower";
 import InvoiceAudit from "./pages/services/InvoiceAudit";
 import EcommerceScaling from "./pages/use-cases/EcommerceScaling";
+import InternationalExpansion from "./pages/use-cases/InternationalExpansion";
+import PeakSeason from "./pages/use-cases/PeakSeason";
+import Digitization from "./pages/use-cases/Digitization";
+import Assessments from "./pages/resources/Assessments";
+import Calculators from "./pages/resources/Calculators";
+import Guides from "./pages/resources/Guides";
+import Blog from "./pages/Blog";
+import CaseStudies from "./pages/CaseStudies";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +54,16 @@ const App = () => (
           
           {/* Use Cases Routes */}
           <Route path="/use-cases/ecommerce-scaling" element={<EcommerceScaling />} />
+          <Route path="/use-cases/international-expansion" element={<InternationalExpansion />} />
+          <Route path="/use-cases/peak-season" element={<PeakSeason />} />
+          <Route path="/use-cases/digitization" element={<Digitization />} />
+          
+          {/* Resources Routes */}
+          <Route path="/resources/assessments" element={<Assessments />} />
+          <Route path="/resources/calculators" element={<Calculators />} />
+          <Route path="/resources/guides" element={<Guides />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
