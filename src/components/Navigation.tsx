@@ -160,7 +160,7 @@ const Navigation = () => {
                       {resourcesItems.map(item => <NavigationMenuLink asChild key={item.href}>
                           <Link to={item.href} className={cn("block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground")}>
                             <div className="text-sm font-medium leading-none">{item.title}</div>
-                            <p className="text-xs leading-snug text-muted-foreground">
+                            <p className="text-xs leading-snug text-inherit">
                               {item.description}
                             </p>
                           </Link>
