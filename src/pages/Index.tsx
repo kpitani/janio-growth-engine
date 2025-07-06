@@ -118,7 +118,7 @@ const Index = () => {
           />
           <div className="absolute inset-0 hero-overlay" />
         </div>
-        <div className="relative container mx-auto px-4 py-24 lg:py-40">
+        <div className="relative container mx-auto px-4 py-24 lg:py-40 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl shadow-professional">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="text-white space-y-8 animate-fade-in">
               <h1 className="text-5xl lg:text-7xl font-display leading-tight tracking-tight">
