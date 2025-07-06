@@ -4,41 +4,26 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from '@/components/Navigation';
 import { Settings, ArrowRight, CheckCircle, TrendingUp, Shield, Clock, Target } from 'lucide-react';
-
 const OperationsTeams = () => {
-  const benefits = [
-    {
-      icon: <Target className="w-6 h-6" />,
-      title: "Focus on Core Business",
-      description: "Free your team to drive strategic growth instead of managing daily logistics chaos"
-    },
-    {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Scalability on Demand", 
-      description: "Instantly scale operations for peak seasons without infrastructure investment"
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Expert Technology & Processes",
-      description: "Access enterprise-grade WMS and proven fulfillment processes"
-    },
-    {
-      icon: <Clock className="w-6 h-6" />,
-      title: "Faster Market Expansion",
-      description: "Launch in new markets quickly with established logistics networks"
-    }
-  ];
-
-  const challenges = [
-    "Logistics complexity outpacing team capabilities",
-    "Peak season capacity nightmares", 
-    "Team burnout from firefighting mode",
-    "Scaling roadblocks limiting growth",
-    "Unexpected cost surprises"
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const benefits = [{
+    icon: <Target className="w-6 h-6" />,
+    title: "Focus on Core Business",
+    description: "Free your team to drive strategic growth instead of managing daily logistics chaos"
+  }, {
+    icon: <TrendingUp className="w-6 h-6" />,
+    title: "Scalability on Demand",
+    description: "Instantly scale operations for peak seasons without infrastructure investment"
+  }, {
+    icon: <Shield className="w-6 h-6" />,
+    title: "Expert Technology & Processes",
+    description: "Access enterprise-grade WMS and proven fulfillment processes"
+  }, {
+    icon: <Clock className="w-6 h-6" />,
+    title: "Faster Market Expansion",
+    description: "Launch in new markets quickly with established logistics networks"
+  }];
+  const challenges = ["Logistics complexity outpacing team capabilities", "Peak season capacity nightmares", "Team burnout from firefighting mode", "Scaling roadblocks limiting growth", "Unexpected cost surprises"];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -47,9 +32,7 @@ const OperationsTeams = () => {
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <div className="flex justify-center mb-6">
-              <div className="p-4 rounded-full bg-white/10 backdrop-blur border border-white/20">
-                <Settings className="w-8 h-8" />
-              </div>
+              
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold font-display mb-6 animate-fade-in">
               Focus on growth, not logistics firefighting
@@ -91,12 +74,12 @@ const OperationsTeams = () => {
             
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4">
-                {challenges.map((challenge, index) => (
-                  <div key={index} className="flex items-start space-x-3 p-4 rounded-lg bg-muted/50 animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                {challenges.map((challenge, index) => <div key={index} className="flex items-start space-x-3 p-4 rounded-lg bg-muted/50 animate-slide-up" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
                     <div className="w-2 h-2 rounded-full bg-destructive mt-3 flex-shrink-0" />
                     <p className="text-foreground font-medium">{challenge}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               <div className="animate-fade-in">
                 <Card className="p-6 bg-gradient-subtle border-l-4 border-l-destructive">
@@ -134,8 +117,9 @@ const OperationsTeams = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card key={benefit.title} className="p-6 hover:shadow-medium transition-all duration-300 animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            {benefits.map((benefit, index) => <Card key={benefit.title} className="p-6 hover:shadow-medium transition-all duration-300 animate-scale-in" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="p-2 rounded-lg bg-accent/10 text-accent">
@@ -151,8 +135,7 @@ const OperationsTeams = () => {
                     {benefit.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -216,8 +199,6 @@ const OperationsTeams = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default OperationsTeams;
