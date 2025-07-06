@@ -85,12 +85,12 @@ const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300">
-            <img src={janioLogo} alt="Janio - Expert 4PL Logistics Solutions" className="h-8 w-auto filter brightness-0" onError={e => {
+            <img src={janioLogo} alt="Janio - Expert 4PL Logistics Solutions" onError={e => {
             const target = e.currentTarget as HTMLImageElement;
             const nextSibling = target.nextElementSibling as HTMLElement;
             target.style.display = 'none';
             if (nextSibling) nextSibling.style.display = 'block';
-          }} />
+          }} className="h-8 w-auto filter brightness-0 object-fill" />
             <span className="text-xl font-bold text-primary tracking-tight">JANIO</span>
           </Link>
 
