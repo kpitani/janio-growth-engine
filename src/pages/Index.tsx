@@ -5,7 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from '@/components/Navigation';
 import PersonaCard from '@/components/PersonaCard';
 import HowItWorksStep from '@/components/HowItWorksStep';
-import heroImage from '@/assets/hero-blue-professional.jpg';
+import heroImage from '@/assets/hero-elegant-premium.jpg';
+import workspaceImage from '@/assets/professional-workspace.jpg';
 import { 
   Settings, 
   DollarSign, 
@@ -145,23 +146,12 @@ const Index = () => {
             <div className="animate-slide-up lg:justify-self-end">
               <div className="relative">
                 <div className="absolute -inset-4 bg-white/10 rounded-2xl blur-xl" />
-                <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-professional">
-                  <div className="space-y-6">
-                    <div className="text-white text-sm font-medium uppercase tracking-wider">Real-time Analytics</div>
-                    <div className="grid grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <div className="text-3xl font-bold text-white">15%</div>
-                        <div className="text-white text-sm">Cost Reduction</div>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="text-3xl font-bold text-white">99.5%</div>
-                        <div className="text-white text-sm">On-time Delivery</div>
-                      </div>
-                    </div>
-                    <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                      <div className="h-full bg-white rounded-full w-4/5" />
-                    </div>
-                  </div>
+                <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-professional">
+                  <img 
+                    src={workspaceImage} 
+                    alt="Professional workspace with modern technology"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
