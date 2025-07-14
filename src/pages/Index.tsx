@@ -6,7 +6,7 @@ import Navigation from '@/components/Navigation';
 import PersonaCard from '@/components/PersonaCard';
 import HowItWorksStep from '@/components/HowItWorksStep';
 import heroImage from '@/assets/hero-elegant-premium.jpg';
-import workspaceImage from '@/assets/professional-workspace.jpg';
+import dashboardImage from '@/assets/dashboard-analytics.jpg';
 import { 
   Settings, 
   DollarSign, 
@@ -148,8 +148,8 @@ const Index = () => {
                 <div className="absolute -inset-4 bg-white/10 rounded-2xl blur-xl" />
                 <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-professional">
                   <img 
-                    src={workspaceImage} 
-                    alt="Professional workspace with modern technology"
+                    src={dashboardImage} 
+                    alt="Logistics analytics dashboard showing lane analysis and performance metrics"
                     className="w-full h-full object-cover"
                   />
                 </div>
