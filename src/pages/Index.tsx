@@ -108,11 +108,11 @@ const Index = () => {
             <div className="animate-slide-up lg:justify-self-end">
               <div className="relative">
                 <div className="absolute -inset-4 bg-white/10 rounded-2xl blur-xl" />
-                <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-professional">
+                <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-professional max-w-lg">
                   <img 
                     src="/lovable-uploads/8c68f958-3573-4ff2-9966-82fbfd805748.png" 
                     alt="Janio Dashboard Analytics Interface"
-                    className="w-full h-auto"
+                    className="w-full h-auto max-h-80 object-contain"
                   />
                 </div>
               </div>
