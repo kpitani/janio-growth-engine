@@ -7,116 +7,78 @@ import PersonaCard from '@/components/PersonaCard';
 import HowItWorksStep from '@/components/HowItWorksStep';
 import heroImage from '@/assets/hero-elegant-premium.jpg';
 import dashboardImage from '@/assets/dashboard-analytics.jpg';
-import { 
-  Settings, 
-  DollarSign, 
-  Network, 
-  BarChart3,
-  Search,
-  Lightbulb,
-  Play,
-  CheckCircle,
-  ArrowRight,
-  Users,
-  Globe,
-  Clock,
-  Shield
-} from 'lucide-react';
-
+import { Settings, DollarSign, Network, BarChart3, Search, Lightbulb, Play, CheckCircle, ArrowRight, Users, Globe, Clock, Shield } from 'lucide-react';
 const Index = () => {
-  const personas = [
-    {
-      title: "For Operations Teams",
-      headline: "Focus on growth, not logistics firefighting",
-      subtext: "Scalable LaaS solutions for e-commerce operations",
-      href: "/solutions/operations-teams",
-      icon: <Settings className="w-6 h-6" />
-    },
-    {
-      title: "For Procurement Teams", 
-      headline: "Cut freight costs by up to 15%",
-      subtext: "Expert transportation procurement services",
-      href: "/solutions/procurement-teams",
-      icon: <DollarSign className="w-6 h-6" />
-    },
-    {
-      title: "For Supply Chain Leaders",
-      headline: "Turn complexity into competitive advantage", 
-      subtext: "Real-time visibility with Control Tower platform",
-      href: "/solutions/supply-chain-leaders",
-      icon: <Network className="w-6 h-6" />
-    },
-    {
-      title: "For Finance Teams",
-      headline: "Recover 3-8% of logistics spend immediately",
-      subtext: "Systematic invoice audit and cost recovery",
-      href: "/solutions/finance-teams", 
-      icon: <BarChart3 className="w-6 h-6" />
-    }
-  ];
-
-  const steps = [
-    {
-      stepNumber: 1,
-      title: "Assess",
-      description: "We analyze your current logistics setup",
-      icon: <Search className="w-6 h-6" />
-    },
-    {
-      stepNumber: 2,
-      title: "Design", 
-      description: "Custom 4PL solution across all modes",
-      icon: <Lightbulb className="w-6 h-6" />
-    },
-    {
-      stepNumber: 3,
-      title: "Execute",
-      description: "Expert team manages day-to-day operations",
-      icon: <Play className="w-6 h-6" />
-    },
-    {
-      stepNumber: 4,
-      title: "Optimize",
-      description: "Continuous improvement and scaling",
-      icon: <CheckCircle className="w-6 h-6" />
-    }
-  ];
-
-  const metrics = [
-    {
-      value: "15%",
-      label: "Average cost reduction",
-      icon: <DollarSign className="w-5 h-5" />
-    },
-    {
-      value: "99.5%", 
-      label: "On-time delivery rate",
-      icon: <Clock className="w-5 h-5" />
-    },
-    {
-      value: "24/7",
-      label: "Visibility and control",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      value: "$50M+",
-      label: "In cost savings recovered",
-      icon: <Shield className="w-5 h-5" />
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const personas = [{
+    title: "For Operations Teams",
+    headline: "Focus on growth, not logistics firefighting",
+    subtext: "Scalable LaaS solutions for e-commerce operations",
+    href: "/solutions/operations-teams",
+    icon: <Settings className="w-6 h-6" />
+  }, {
+    title: "For Procurement Teams",
+    headline: "Cut freight costs by up to 15%",
+    subtext: "Expert transportation procurement services",
+    href: "/solutions/procurement-teams",
+    icon: <DollarSign className="w-6 h-6" />
+  }, {
+    title: "For Supply Chain Leaders",
+    headline: "Turn complexity into competitive advantage",
+    subtext: "Real-time visibility with Control Tower platform",
+    href: "/solutions/supply-chain-leaders",
+    icon: <Network className="w-6 h-6" />
+  }, {
+    title: "For Finance Teams",
+    headline: "Recover 3-8% of logistics spend immediately",
+    subtext: "Systematic invoice audit and cost recovery",
+    href: "/solutions/finance-teams",
+    icon: <BarChart3 className="w-6 h-6" />
+  }];
+  const steps = [{
+    stepNumber: 1,
+    title: "Assess",
+    description: "We analyze your current logistics setup",
+    icon: <Search className="w-6 h-6" />
+  }, {
+    stepNumber: 2,
+    title: "Design",
+    description: "Custom 4PL solution across all modes",
+    icon: <Lightbulb className="w-6 h-6" />
+  }, {
+    stepNumber: 3,
+    title: "Execute",
+    description: "Expert team manages day-to-day operations",
+    icon: <Play className="w-6 h-6" />
+  }, {
+    stepNumber: 4,
+    title: "Optimize",
+    description: "Continuous improvement and scaling",
+    icon: <CheckCircle className="w-6 h-6" />
+  }];
+  const metrics = [{
+    value: "15%",
+    label: "Average cost reduction",
+    icon: <DollarSign className="w-5 h-5" />
+  }, {
+    value: "99.5%",
+    label: "On-time delivery rate",
+    icon: <Clock className="w-5 h-5" />
+  }, {
+    value: "24/7",
+    label: "Visibility and control",
+    icon: <Globe className="w-5 h-5" />
+  }, {
+    value: "$50M+",
+    label: "In cost savings recovered",
+    icon: <Shield className="w-5 h-5" />
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={heroImage} 
-            alt="Professional business workspace with modern technology"
-            className="w-full h-full object-cover object-center"
-          />
+          <img src={heroImage} alt="Professional business workspace with modern technology" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="relative container mx-auto px-4 py-24 lg:py-40 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl shadow-professional">
@@ -147,11 +109,7 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-white/10 rounded-2xl blur-xl" />
                 <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-professional">
-                  <img 
-                    src={dashboardImage} 
-                    alt="Logistics analytics dashboard showing lane analysis and performance metrics"
-                    className="w-full h-full object-cover"
-                  />
+                  
                 </div>
               </div>
             </div>
@@ -173,11 +131,11 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {personas.map((persona, index) => (
-              <div key={persona.href} className="animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+            {personas.map((persona, index) => <div key={persona.href} className="animate-slide-up" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <PersonaCard {...persona} />
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -195,11 +153,11 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
-            {steps.map((step, index) => (
-              <div key={step.stepNumber} className="animate-scale-in" style={{ animationDelay: `${index * 0.15}s` }}>
+            {steps.map((step, index) => <div key={step.stepNumber} className="animate-scale-in" style={{
+            animationDelay: `${index * 0.15}s`
+          }}>
                 <HowItWorksStep {...step} isLast={index === steps.length - 1} />
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -220,8 +178,9 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {metrics.map((metric, index) => (
-              <Card key={metric.label} className="text-center p-6 animate-slide-up hover:shadow-medium transition-all duration-300" style={{ animationDelay: `${index * 0.1}s` }}>
+            {metrics.map((metric, index) => <Card key={metric.label} className="text-center p-6 animate-slide-up hover:shadow-medium transition-all duration-300" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <CardContent className="pt-6">
                   <div className="flex justify-center mb-4">
                     <div className="p-3 rounded-full bg-accent/10 text-accent">
@@ -235,8 +194,7 @@ const Index = () => {
                     {metric.label}
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -268,8 +226,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
