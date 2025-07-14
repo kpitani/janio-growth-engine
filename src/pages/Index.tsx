@@ -106,15 +106,18 @@ const Index = () => {
               </div>
             </div>
             <div className="animate-slide-up lg:justify-self-end">
-              <div className="relative">
+              <div className="relative perspective-1000">
                 <div className="absolute -inset-4 bg-white/10 rounded-2xl blur-xl" />
-                <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-professional max-w-lg">
+                <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-professional max-w-lg transform rotate-3 hover:rotate-0 transition-transform duration-500">
                   <img 
                     src="/lovable-uploads/8c68f958-3573-4ff2-9966-82fbfd805748.png" 
                     alt="Janio Dashboard Analytics Interface"
-                    className="w-full h-auto max-h-80 object-contain"
+                    className="w-full h-auto max-h-80 object-contain transform scale-105"
                   />
                 </div>
+                {/* Layered effect with additional cards */}
+                <div className="absolute -top-4 -right-4 bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl w-48 h-32 transform rotate-6 shadow-lg opacity-60" />
+                <div className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl w-40 h-28 transform -rotate-3 shadow-lg opacity-40" />
               </div>
             </div>
           </div>
