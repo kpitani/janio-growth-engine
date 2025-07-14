@@ -25,6 +25,9 @@ import Guides from "./pages/resources/Guides";
 import Blog from "./pages/Blog";
 import CaseStudies from "./pages/CaseStudies";
 import NotFound from "./pages/NotFound";
+import EcommerceBrands from "./pages/EcommerceBrands";
+import Marketplaces from "./pages/Marketplaces";
+import LogisticsPartners from "./pages/LogisticsPartners";
 
 const queryClient = new QueryClient();
 
@@ -64,6 +67,11 @@ const App = () => (
           <Route path="/resources/guides" element={<Guides />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/case-studies" element={<CaseStudies />} />
+          
+          {/* Landing Pages */}
+          <Route path="/ecommerce-brands" element={<EcommerceBrands />} />
+          <Route path="/marketplaces" element={<Marketplaces />} />
+          <Route path="/logistics-partners" element={<LogisticsPartners />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
