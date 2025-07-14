@@ -109,7 +109,11 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-white/10 rounded-2xl blur-xl" />
                 <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-professional">
-                  
+                  <img 
+                    src="/lovable-uploads/8c68f958-3573-4ff2-9966-82fbfd805748.png" 
+                    alt="Janio Dashboard Analytics Interface"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
